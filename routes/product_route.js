@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { response } from 'express';
 import { get_all_product } from '../controllers/ProductController/get_all_product.js';
 import { get_one_product } from '../controllers/ProductController/get_one_product.js';
 import { post_one_product } from '../controllers/ProductController/post_one_product.js';
