@@ -2,6 +2,8 @@ import Product from '../../models/product_models.js';
 
 export const post_one_product = async (request, response) => {
 
+    response.setHeader('Access-Control-Allow-Origin', '*');
+
     try {
         
         let product = Product(request.body);
