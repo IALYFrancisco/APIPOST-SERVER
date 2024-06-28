@@ -9,6 +9,12 @@ const app = express();
 
 app.use(express.json())
 
+app.use((request, response, next) => {
+    response.setHeader('Access-Control-Allow-Origin', '*');
+    response.setHeader('Access-Control-Allow-Headers', '*');
+    next();
+})
+
 app.get('/', (request, response) => {
     response.status(200).json("Welcome to APIPOST server 😀");
 });
