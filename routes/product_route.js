@@ -9,6 +9,6 @@ product_route.get('/all_products', get_all_product);
 
 product_route.get('/product/:id', get_one_product);
 
-product_route.post('/productOne', post_one_product);
+product_route.post('/product', post_one_product);
 
 export default product_route;
