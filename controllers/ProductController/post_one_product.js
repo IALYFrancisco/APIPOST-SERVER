@@ -13,7 +13,7 @@ export const post_one_product = async (request, response) => {
             product: product
         })
     
-        response.status(200).send(responseToSend);
+        response.status(201).send(responseToSend);
 
     }catch(error){
 
