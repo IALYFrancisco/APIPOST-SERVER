@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
     "mongoose": "^8.4.3"
   },
@@ -8,11 +9,11 @@
   "description": "\"Un serveur pour la plateforme APIPOST\"",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "start":"nodemon",
+    "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "IALY",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module"
 }
