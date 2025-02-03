@@ -1,6 +1,5 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import dbConnexion from './services/db_connexion.js';
 import product_router from './routes/product_route.js';
 
 dotenv.config();
