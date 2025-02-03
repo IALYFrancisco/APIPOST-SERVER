@@ -11,7 +11,7 @@ export const get_one_product = async (request, response) => {
 
     if(product==""){
 
-        response.status(200).json('element doesn\'t exist 🧓📅');
+        response.status(404).json('element doesn\'t exist 🧓📅');
 
     }else{
 
