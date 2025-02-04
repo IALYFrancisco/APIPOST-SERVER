@@ -1,6 +1,5 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import dbConnexion from './services/db_connexion.js';
 import product_router from './routes/product_route.js';
 
 dotenv.config();
@@ -12,6 +11,7 @@ app.use(express.json())
 app.use((request, response, next) => {
     response.setHeader('Access-Control-Allow-Origin', '*');
     response.setHeader('Access-Control-Allow-Headers', '*');
+    response.setHeader('Access-Control-Allow-Methods', '*')
     next();
 })
 

@@ -6,7 +6,7 @@ export const delete_product = async (request, response) => {
     
     if(DeleteStatus){
     
-        response.status(200).send(`The product with id ${request.params.id} is deleted 👍✅`);
+        response.status(200).json(`The product with id ${request.params.id} is deleted 👍✅`);
     
     }
 
