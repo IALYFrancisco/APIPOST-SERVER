@@ -5,6 +5,7 @@ import { post_one_product } from '../controllers/ProductController/post_one_prod
 import { delete_product } from '../controllers/ProductController/delete_product.js';
 import { put_product } from '../controllers/ProductController/put_product.js';
 import { patch_product } from '../controllers/ProductController/patch_product.js';
+import { sendEmail } from '../controllers/ProductController/sendEmail.js';
 
 const product_route = express.Router();
 
@@ -19,5 +20,7 @@ product_route.delete('/product/:id', delete_product);
 product_route.put('/product/:id', put_product);
 
 product_route.patch('/product/:id', patch_product);
+
+product_route.post('/email/send', sendEmail);
 
 export default product_route;
