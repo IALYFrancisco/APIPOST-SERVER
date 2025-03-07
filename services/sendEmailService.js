@@ -24,11 +24,14 @@ export async function sendEmailServices(dataTosend){
                 "api-key": process.env.API_KEY
             }
         }).then((response)=>{
+            console.log(response)
             return response
         }).catch((error) => {
+            console.log(error)
             return error
         })
     }catch(error){
+        console.log(error)
         return error
     }
 }
