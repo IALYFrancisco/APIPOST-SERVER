@@ -10,4 +10,4 @@ const SongsSchema = new mongoose.Schema({
     add_date : { type : Date, required: true, default: Date.now }
 })
 
-export const Songs = new mongoose.Model("Songs", SongsSchema)
+export const Songs = new mongoose.model("Songs", SongsSchema)
