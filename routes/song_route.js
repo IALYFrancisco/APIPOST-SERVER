@@ -1,9 +1,6 @@
 import e from 'express'
+import { getAllSong } from '../services/songServices.js'
 
-const _song_router = e.Router()
+export const song_router = e.Router()
 
-_song_router.get('/get-all', getAllSong)
-
-export default {
-    song_router : _song_router 
-}
+song_router.get('/get-all', getAllSong)
