@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import product_router from './routes/product_route.js';
+import { song_router } from './routes/song_route.js';
 
 dotenv.config();
 
@@ -21,4 +22,6 @@ app.get('/', (request, response) => {
 
 app.use('/', product_router);
 
-app.listen(process.env.APP_PORT, ()=>{ console.log(`http://127.0.0.1:${process.env.APP_PORT}`) });
+app.use('/song', song_router)
+
+app.listen(process.env.APP_PORT, ()=>{ console.log(`The application is listening on ${process.env.APP_HOST}`) });
